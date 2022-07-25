@@ -1,0 +1,13 @@
+<app-sidebar></app-sidebar>
+<div class="main-container">
+    <div class="view-container vh-100">
+        <app-header></app-header>
+      
+        <div class="container-fluid">
+            <app-counter-output [counter]="counter"></app-counter-output>
+            <app-counter-buttons (incremnt)="Inc()" (decrement)="Dec()" (reset)="Res()"></app-counter-buttons>
+        </div>
+
+       
+    </div>
+</div>
