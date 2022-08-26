@@ -21,4 +21,4 @@ import { CounterButtonsComponent } from './counter-buttons/counter-buttons.compo
     CUSTOM_ELEMENTS_SCHEMA
   ],
 })
-export class CounterModule { }
+export class EventEmitterModule { }
