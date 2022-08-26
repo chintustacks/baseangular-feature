@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './subject-sender.component.html',
   styleUrls: ['./subject-sender.component.css']
 })
+
 export class SubjectSenderComponent implements OnInit {
 
   constructor() { }
