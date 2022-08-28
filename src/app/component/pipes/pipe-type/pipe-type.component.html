@@ -1,0 +1,73 @@
+<div class="row p-3">
+  <div class="col-md-6">
+    <h4 class="card-title">Date</h4>
+    <div class="card card-block p-3">
+      {{ dateObj | date }}
+      <br>
+      {{ dateObj | date:'medium' }}
+      <br>
+      {{ dateObj | date:'shortTime' }}
+      <br>
+      {{ dateObj | date:'mm:ss' }}
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card card-block p-3">
+      <h4 class="card-title">Currency</h4>
+      <div class="card-text">
+        <p ngNonBindable>{{ 1234.56 | currency:'CAD' }}</p>
+        <p>{{ 1234.56 | currency:"CAD" }}</p>
+
+        <p ngNonBindable>{{ 1234.56 | currency:'CAD':'code' }}</p>
+        <p>{{ 1234.56 | currency:'CAD':'code'}}</p>
+
+        <p ngNonBindable>{{ 1234.56 | currency:'CAD':'symbol' }}</p>
+        <p>{{ 1234.56 | currency:'CAD':'symbol'}}</p>
+
+        <p ngNonBindable>{{ 1234.56 | currency:'CAD':'symbol-narrow' }}</p>
+        <p>{{ 1234.56 | currency:'CAD':'symbol-narrow'}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <h4 class="card-title">Number</h4>
+    <div class="card card-block p-3">
+      3.9 = {{3.9 | number: '1.0-0'}}
+      <!--will output '4'-->
+      <br>
+      -3.6 = {{-3.6 | number:'1.0-0'}}
+      <!--will output '-4'-->
+    </div>
+  </div>
+  <div class="col-md-6">
+    <h4 class="card-title">JSON</h4>
+    <div class="card card-block p-3">
+      <div>
+        <p>Without JSON pipe:</p>
+        <pre>{{object}}</pre>
+        <p>With JSON pipe:</p>
+        <pre>{{object | json}}</pre>
+      </div>`
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <h4 class="card-title">JSON</h4>
+    <div class="card card-block p-3">
+      {{ 'It was the best of times' | truncate:4:'....' }}
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <h4 class="card-title">JSON</h4>
+    <div class="card card-block p-3">
+
+    </div>
+  </div>
+  <div class="col-md-6">
+    <h4 class="card-title">JSON</h4>
+    <div class="card card-block p-3">
+
+    </div>
+  </div>
+</div>

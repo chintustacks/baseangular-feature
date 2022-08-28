@@ -1,1 +1,5 @@
-<p>subject-sender works!</p>
+<div class="d-flex text-center p-3">
+    <p class="me-3"> Enter a text to pass : </p>
+    <input type="text" class="form-control w-50" [(ngModel)]="myTextVal">
+    <button type="button" class="btn-sm  btn btn-primary ms-3" (click)="sendTextValue()">Click Me</button>
+</div>

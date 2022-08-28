@@ -1,12 +1,28 @@
-
 <app-sidebar></app-sidebar>
 <div class="t-container">
-  
     <div class="t-container-xxl">
         <app-header></app-header>
-        <div class="container-fluid"> 
-            <app-counter-output [counter]="counter"></app-counter-output>
-            <app-counter-buttons (incremnt)="Inc()" (decrement)="Dec()" (reset)="Res()"></app-counter-buttons>
+        <div class="container-fluid">
+            <div class="card shadow p-2 mt-4">
+                <p class="text-center">Event Emiiter</p>
+                <app-counter-output [counter]="counter"></app-counter-output>
+                <app-counter-buttons (incremnt)="Inc()" (decrement)="Dec()" (reset)="Res()"></app-counter-buttons>
+            </div>
+            <div class="card shadow p-2 mt-4">
+                <p class="text-center">Subject</p>
+                <div class="col">
+                    <app-subject-sender></app-subject-sender>
+                </div>
+                <div class="col">
+                    <app-subject-reciver></app-subject-reciver>
+                </div>
+            </div>
+            <div class="card shadow p-2 mt-4">
+                <p class="text-center">Pipes</p>
+                <div class="col">
+                    <app-pipe-type></app-pipe-type>
+                </div>
+            </div>
         </div>
     </div>
 </div>
